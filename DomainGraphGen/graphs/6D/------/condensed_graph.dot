@@ -1,0 +1,37 @@
+digraph {
+	subgraph level_6 { rank = same; node [shape = box] 000000; 111111};
+	subgraph level_4 { rank = same; node [shape = box] 000001; 000011; 000111; 001111; 011111};
+	subgraph level_2 { rank = same; node [shape = box] 000101; 001001; 001011; 001101; 010111; 011011};
+	subgraph level_0 { rank = same; node [shape = box] 010101};
+
+	edge [color = blue, label = ""] 000000 -> 000001 ;
+	edge [color = red, label = ""] 000001 -> 000011 ;
+	edge [color = blue, label = ""] 000001 -> 000101 ;
+	edge [color = blue, label = ""] 000001 -> 001001 ;
+	edge [color = red, label = ""] 000011 -> 000001 ;
+	edge [color = red, label = ""] 000011 -> 000111 ;
+	edge [color = blue, label = ""] 000011 -> 001011 ;
+	edge [color = blue, label = ""] 000011 -> 001101 ;
+	edge [color = red, label = ""] 000101 -> 001101 ;
+	edge [color = blue, label = ""] 000101 -> 010101 ;
+	edge [color = red, label = ""] 000111 -> 000011 ;
+	edge [color = blue, label = ""] 000111 -> 000101 ;
+	edge [color = red, label = ""] 000111 -> 001111 ;
+	edge [color = blue, label = ""] 000111 -> 010111 ;
+	edge [color = red, label = ""] 001001 -> 001011 ;
+	edge [color = red, label = ""] 001011 -> 000101 ;
+	edge [color = red, label = ""] 001011 -> 011011 ;
+	edge [color = red, label = ""] 001101 -> 001001 ;
+	edge [color = red, label = ""] 001101 -> 010111 ;
+	edge [color = red, label = ""] 001111 -> 000111 ;
+	edge [color = blue, label = ""] 001111 -> 001011 ;
+	edge [color = blue, label = ""] 001111 -> 001101 ;
+	edge [color = red, label = ""] 001111 -> 011111 ;
+	edge [color = red, label = ""] 010111 -> 001011 ;
+	edge [color = blue, label = ""] 010111 -> 010101 ;
+	edge [color = red, label = ""] 011011 -> 001101 ;
+	edge [color = red, label = ""] 011111 -> 001111 ;
+	edge [color = blue, label = ""] 011111 -> 010111 ;
+	edge [color = blue, label = ""] 011111 -> 011011 ;
+	edge [color = blue, label = ""] 111111 -> 011111 ;
+}

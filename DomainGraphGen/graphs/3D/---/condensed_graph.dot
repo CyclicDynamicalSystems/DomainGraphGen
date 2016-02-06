@@ -1,0 +1,9 @@
+digraph {
+	subgraph level_3 { rank = same; node [shape = box] 000; 111};
+	subgraph level_1 { rank = same; node [shape = box] 001; 011};
+
+	edge [color = blue, label = ""] 000 -> 001 ;
+	edge [color = red, label = ""] 001 -> 011 ;
+	edge [color = red, label = ""] 011 -> 001 ;
+	edge [color = blue, label = ""] 111 -> 011 ;
+}
